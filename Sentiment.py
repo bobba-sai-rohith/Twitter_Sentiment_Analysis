@@ -9,10 +9,10 @@ import tweepy
 def senti(name):
     sum2=0
     sum1=0
-    customer_key='bFKZ6t8sVOWGwHWc36D2BdJau'
-    customer_code='c9dhsfHJWW9UerMFlRlTdeJJxg7Ccx9KikQzfsofN27SxCkJ0H'
-    acess_token='1031035056695828481-22eefQQtOLRWtyGZmHJtknDQsd6rgn'
-    acess_secret='iVa7DZnxrMTeyxjwkOI8wrDYCffk9ptpumFoutK6GlK9y'
+    customer_key=''
+    customer_code=''
+    acess_token=''
+    acess_secret=''
     aces=tweepy.OAuthHandler(customer_key,customer_code)
     aces.set_access_token(acess_token,acess_secret)
     api=tweepy.API(aces)
