@@ -1,11 +1,16 @@
+#importing library flask for implememting flask ap;lication
 from flask import Flask, render_template, request,url_for,redirect
-from twittersentimentconsole import senti
-from profiletweets import prof
-from getimagetweet import imag,profimag
+#importing all functions from other files 
+from SearchTagSentiment import senti
+from profileTweeetSentiment import prof
+from GetImage import imag,profimag
+#importing ceil function from math library
 from math import ceil
 
+#initilising the sentiment to not found and image to not found to prevent errors
 n="not found"
 l="no image"
+#flask application 
 app = Flask(__name__)
 
 @app.route('/')
@@ -37,13 +42,6 @@ def sentimentPolarity():
     else:
         return render_template("aps.html")
 
-"""
-def hello():
-    name=input()
-    n=senti(name)
-    print(n)
-
-"""
 
 if __name__=='__main__':
     app.run(debug = True)
