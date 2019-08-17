@@ -13,15 +13,9 @@ l="no image"
 #flask application 
 app = Flask(__name__)
 
-@app.route('/')
-def home():
-    return render_template('sept.html')
 
-@app.route('/test/<string:n>/')
-def index(n):
-    return render_template('prabhu.html' ,sentiment=n,image=l)
 
-@app.route("/sentiment", methods=['GET', 'POST'])
+@app.route("/", methods=['GET', 'POST'])
 def sentimentPolarity():
     if request.method=='POST':
         name=request.form['search']
