@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        body{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+section.cover{
+  background: linear-gradient(45deg,#151680 50%,#261681 50%);
+  padding: 20px 10%;
+    border-bottom: 50px solid transparent;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+nav{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 1px 1px 10px black;
+  letter-spacing: 4px;background-color: #D20B54;
+border-radius: 13px;
+margin: 4px 2px 2px 15px;
+box-shadow: 2px 1px 4px #D20B54;width: 480px;
+}
+div.cta-btn{
+  margin: 60px 0 20px 0;
+}
+
+ div.cta-btn:hover{
+  transform: translateY(-6px);
+  color: #222;
+}
+div.cta-btn a{
+  padding: 10px 20px;
+  background-color: #D20B54;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+}
+ .heading{
+    border:2px solid #D20B54 ;
+  text-shadow: 1px 1px 10px black;
+  font-size: 2.5rem;margin: 1px 2px 2px 0px;
+  font-weight: 50;width: 520px;text-align: center;border-radius: 8px;
+}.heading:hover{transition-duration: 0.3s;
+    border:2px solid #D20B54 ;
+  text-shadow: 1px 1px 10px black;
+  font-size: 2.5rem;margin: 1px 2px 2px 0px;text-shadow: 0 1px 12px #D20B54;
+  font-weight: 50;width: 500px;text-align: center;border-radius: 18px;
+}
+ .content{
+  color: #fff;
+  padding: 40px 0;
+  position: relative;
+}
+.card {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+height: 190px;
+  width: 170px;
+  padding: 20px 30px 20px 27px;
+  background-color: #fff;
+  color: #888;
+  border-radius: 5px;
+  transition: 200ms all ease-in-out;
+  cursor: pointer;
+}
+ .card:hover{
+  transform: translateY(-6px);
+  color: #222;
+}
+img
+{height:190px; width:170px; left: 101px;
+margin: 2px 4px 2px 3px;
+border-radius: 1px;}
+    
+    
+
+.wrapper {
+  margin: 1px 2px 2px 2px;
+  width: 2px;
+  position: left;
+  vertical-align: bottom;
+}
+.wrapper .speedometer {
+  width: 200px;
+  height: 100px;
+  background:  #5cd65c;
+  -moz-border-radius: 200px 200px 0 0;
+  -webkit-border-radius: 200px;
+  border-radius: 200px 200px 0 0;
+  position: relative;
+  box-shadow: 01px 1px 19px #3a8c3c;
+  border:3px solid #3a8c2c;
+}
+.wrapper .speedometer .pointer {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  
+  height: 0;
+  box-shadow: 0 0 11px #3a8c3c;
+}
+.wrapper .speedometer .pointer:after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 20px;
+  -moz-border-radius: 30px 40px 0 0;
+  -webkit-border-radius: 40px;
+  border-radius: 40px 40px 10px 0;
+  background: white;
+  position: absolute;
+  bottom: -1px;border-top-left-radius:100%;border-top-right-radius:100%;
+ 
+  left: -20px;
+
+  box-shadow: 0 0  70px #3a8c3c;}
+.wrapper .speedometer .pointer:before {
+
+  box-shadow: 0 0  1px #3a8c3c;
+  content: "";
+  display: block;
+  position: absolute;
+  left: -5px;
+  bottom: 0px;border-top-left-radius:100%;border-top-right-radius:100%;
+ 
+  width: 7px;
+  height: 100px;  background: #bf3824;
+  transform-origin: center 96px;
+  animation: roll 1s alternate forwards;
+}
+
+@keyframes roll {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate({{sentiment*1.8-90}}deg);
+  }
+}
+p{
+text-align: center;
+color: blue;
+vertical-align: bottom;
+}   
+.speedometer1{
+
+    background-color: white;
+}
+.w
+{margin:50px 2px 3px 2px;   
+  width: 120px;
+
+}
+
+.w .speedometer1 {
+  width: 200px;
+  height: 100px;
+  background:#ff1a1a;
+  -moz-border-radius: 200px 200px 0 0;
+  -webkit-border-radius: 200px;
+  border-radius: 200px 200px 0 0;
+  position: relative;
+border:3px solid #bf1313;
+  box-shadow: 0 0  40px #bf1313;}
+.w .speedometer1 .pointer1 {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  box-shadow: 0 0  90px #bf1313;
+}
+.w .speedometer1 .pointer1:after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 20px;
+  -moz-border-radius: 30px 40px 0 0;
+  -webkit-border-radius: 40px;
+  border-radius: 40px 40px 10px 0;
+  background: white;
+  position: absolute;
+  bottom: -1px;
+  left: -20px;border-top-left-radius:100%;border-top-right-radius:100%;
+ 
+  box-shadow: 0 0  90px #bf1313; 
+}
+.w .speedometer1 .pointer1:before {
+ 
+  box-shadow: 0 0  90px #bf1313;
+  content: "";
+  display: block;
+  position: absolute;
+  left: -5px;
+  bottom: 0px;
+  width: 8px;border-top-left-radius:100%;border-top-right-radius:100%;
+  height: 100px;  background:#ffcccc;
+  transform-origin: center 96px;
+  animation: roll1 1s alternate forwards;
+}
+@keyframes roll1 {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate({{(100-sentiment)*1.8-90}}deg);
+
+  }
+}
+
+.htmls
+{
+    width:30px;
+    margin:4px 2px 1px 2px;
+}
+.bar
+{
+    width:300px;
+    display: block;
+    height: 40px;
+    
+    overflow: hidden;
+    
+
+}
+
+.bar2
+{   width:300px;
+    
+    display: block;
+    height: 40px;
+    
+    overflow: hidden;
+}
+
+.bar span
+{
+
+height: 40px; float:left; background:#5cd65c;
+
+}
+
+.bar2 span
+{
+
+height: 40px;float: left;background:#ff1a1a;
+
+}
+.html{
+    width:{{sentiment}}%;
+    animation: html 1s;
+}
+.html2{
+    width:{{100-sentiment}}%;
+    animation: html2 2s;
+}
+
+@keyframes html
+{
+    0%{
+width:0%;
+    }
+   {{sentiment}}%
+    {
+width:{{sentiment}}%;
+    }
+
+}
+
+
+@keyframes html2
+{
+    0%{
+width:0%;
+    }
+
+{{100-sentiment}}%
+    {
+width:{{100-sentiment}}%;
+    }
+
+}
+p{
+    font-size: 20px;
+    color:WHITE;font-family:verdana;
+}
+.image {
+
+height:150px;
+margin:-1px 2px 1px 680px;
+left:300px;}
+img{width:180px;
+height:200px;
+margin:-1px 1px -11px -4px;
+border:2px solid green;
+border-radius:4px;}
+
+center{
+    width: 1px;margin:1px 10px -001px 310px;
+    height: 1px;font-family: verdana;
+    font-size:6em;color:green;
+}
+center:hover
+{font-size: 7em;
+    transition-duration: 0.3s;text-shadow: 0 0 5px black;
+    opacity: 5px;
+}
+
+.eee{
+    width: 1px;margin:10px 110px 10px -300px;
+    height: 1px;font-family: verdana;
+    font-size:6em;color:red;
+}
+.eee:hover
+{font-size: 7em;
+    transition-duration: 0.3s;text-shadow: 0 0 5px black;
+    opacity: 5px;
+}
+
+.red{
+    margin: -160px 1px 2px 1000px;
+}
+   </style>
+
+    <title></title>
+</head>
+<body>
+<section class="cover">
+  <nav>
+    <span class="logo">
+  T W I T T E R
+  </span>
+    
+  </nav>
+  <div class="content">
+    <h2 class="heading">SENTIMENTAL ANALYSIS</h2>
+    <div class="cta-btn">
+    </div>
+    <div class="card">
+      <img src="{{image}}" >  </div>
+  </div>
+</section><br><br>
+<div class="htmls">
+<span class="bar"><span class="html"></span></span>
+</div><br><br>
+<div class="wrapper"><center>{{sentiment}}%</center>
+  <div class="speedometer"><p>
+{{sentiment}}%</p>
+    <div class="pointer"></div>
+    <div class="positive"></div>
+    
+<section class="red">
+<center class="eee">{{100-sentiment}}%</center>    <span class="bar2"><span class="html2"></span></span>
+  <div class="w">
+  <div class="speedometer1"><p>{{100-sentiment}}%</p>
+    <div class="pointer1"></div>
+</div>
+
+  </div>
+
+
+
+</section>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+section.cover{
+  background: linear-gradient(45deg,#151681 50%,#261681 50%);
+  padding: 20px 10%;box-shadow: 0 4px 4px #151680;
+	border-bottom: 100px solid transparent;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+nav{
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 4rem;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 5px 1px 10px black;
+  letter-spacing: 4px;background-color: #D20B54;
+border-radius: 13px;
+margin: 4px 2px 2px 15px;
+box-shadow: 2px 1px 4px #D20B54;width: 450px;
+}
+
+ .heading{
+ 	border:2px solid #D20B54 ;
+  text-shadow: 1px 1px 10px black;
+  font-size: 2.5rem;margin: 1px 2px 2px 0px;
+  font-weight: 50;width: 520px;text-align: center;border-radius: 8px;
+}
+.heading:hover{transition-duration: 0.3s;
+ 	border:2px solid #D20B54 ;
+  text-shadow: 1px 1px 10px black;
+  font-size: 2.5rem;margin: 1px 2px 2px 0px;text-shadow: 0 1px 12px #D20B54;
+  font-weight: 50;width: 500px;text-align: center;border-radius: 18px;
+}
+ .content{
+  color: #fff;
+  padding: 70px 10px 10px 10px;
+  position: relative;
+}
+.card {
+  position: absolute;
+  bottom: 10px;top:-45px;
+  right: 10px;
+height: 190px;
+  width: 170px;
+  padding: 20px 30px 20px 27px;
+  background-color: #fff;
+  color: #888;margin: 20px 1px 1px 1px;
+  border-radius: 5px;
+  transition: 200ms all ease-in-out;
+  cursor: pointer;
+}
+ .card:hover{
+  transform: translateY(-6px);
+  color: #222;
+}
+img
+{height:190px; width:170px; left: 101px;
+margin: 2px 4px 2px 3px;
+border-radius: 8px;}
+.input{margin:-23px 2px 2px 2px ;}
+   input
+   {height: 35px;
+   	width: 500px;
+   	background:white;
+   	padding: 3px;
+   	border:1.5px solid #D20B11;
+   	font-family: verdana;font-size: 17px;color:#1DA1F2;
+   border-radius: 20px;
+   }
+   input:hover
+   {border:1px solid white;
+transition-duration: 0.5s;
+transform: translateY(1px);
+border-bottom: 2px solid #D20B11;
+   	background-color:white;
+
+
+   }
+	.button{
+margin: -16px 140px 2px 20px;
+border:1px solid white;
+
+
+	}
+button{
+	background-color: #D20B11;
+	height: 40px;
+	width: 100px;
+	color:white;border:1px solid #D20B11;
+	border-radius:9px;font-family: verdana;font-size: 0.9em;
+}
+button:hover
+{border-radius:19px;
+	transition-duration: 0.2s;
+color:#D20011;
+background-color: white;font-family: verdana;font-weight: 100;
+
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  border:2px solid white;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:#1DA1F2;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 1px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: .1s;
+  transition: .2.5s;
+}
+
+input:checked + .slider {
+  background-color: #142fa8;
+}
+
+
+input:checked + .slider:before {
+	background-color:#D20B54;
+  -webkit-transform: translateX(2px);
+  -ms-transform: translateX(26px);
+  transform: translateX(20px);
+}
+
+.slider.round {
+  border-radius: 3px;
+}
+
+.slider.round:before {
+  border-radius: 100%;
+}
+a{
+	font-family: comic sans ms;
+	color:#D20B54;
+	font-size: 18px;
+	text-shadow:1px 0 2px #D20B54;
+vertical-align: bottom;
+}
+.input{
+
+	padding: 100px 2px 2px 410px;
+}
+	</style>
+
+	<title></title>
+</head>
+<body>
+<section class="cover">
+  <nav>
+    <span class="logo">
+  T W I T T E R
+  </span>
+    
+  </nav>
+  <div class="content">
+    <h2 class="heading">SENTIMENTAL ANALYSIS</h2>
+    
+    <div class="card">
+      <img src="/static/tlogo.png" >  </div>
+  </div>
+</section>
+<form method="post">
+<div class="input">
+<input type="text" name="search" placeholder="Search..">
+<br>
+<br>
+<label class="switch" >
+  <input type="radio" name="button1" value="1" checked>
+  <span class="slider round"></span>
+</label>&nbsp&nbsp<a ><b>TRENDZ</a>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<label class="switch" >
+  <input type="radio" name="button1" value="2" checked>
+  <span class="slider round"></span>
+</label>&nbsp&nbsp<a >PROFILE</a></b>
+
+</div>
+<br><br>
+<div class="button"><center>
+<button type="submit">Get Started</button></center>
+</form>
+</div></body>
+</html>
